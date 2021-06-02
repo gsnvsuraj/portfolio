@@ -1,17 +1,106 @@
 :root {
     --intro-background-color: white;
-    --intro-typing-speed: 4s;
-    --intro-typing-delay: 1.5s;
-    --intro-typing-characters: 11;
+    
+    --intro-title-typing-speed: 4s;
+    --intro-title-typing-delay: 1.5s;
+    --intro-title-typing-characters: 11;
+    
+    --intro-greet1-typing-speed: 2s;
+    --intro-greet1-typing-delay: 1s;
+    --intro-greet1-typing-characters: 6;
+
+    --intro-greet2-typing-speed: 2s;
+    --intro-greet2-typing-delay: 1s;
+    --intro-greet2-typing-characters: 7;
 }
 
 .introBody {
+    height: calc(100vh - 200px);
+    background-color: var(--intro-background-color);
+}
+
+
+
+.introGreetingBody {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.greet1 {
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.greet1::before,
+.greet1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.greet1::before {
+    background: var(--intro-background-color);
+    animation: typing var(--intro-greet1-typing-speed) steps(var(--intro-greet1-typing-characters)) var(--intro-greet1-typing-delay) forwards;
+}
+
+.greet1::after {
+    width: .125rem;
+    background: black;
+    animation: typing var(--intro-greet1-typing-speed) steps(var(--intro-greet1-typing-characters)) var(--intro-greet1-typing-delay) forwards,
+    blink 1s steps(var(--intro-greet1-typing-characters)) infinite;
+}
+
+
+.greet2 {
+    font-size: 4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.greet2::before,
+.greet2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.greet2::before {
+    background: var(--intro-background-color);
+    animation: typing var(--intro-greet2-typing-speed) steps(var(--intro-greet2-typing-characters)) var(--intro-greet2-typing-delay) forwards;
+}
+
+.greet2::after {
+    width: .125rem;
+    background: black;
+    animation: typing var(--intro-greet2-typing-speed) steps(var(--intro-greet2-typing-characters)) var(--intro-greet2-typing-delay) forwards,
+    blink 1s steps(var(--intro-greet2-typing-characters)) infinite;
+}
+
+
+
+.introTitleBody {
     display: flex;
     justify-content: center;
     align-content: center;
     height: calc(100vh - 200px);
     background-color: var(--intro-background-color);
 }
+
 
 .introTitle {
     font-size: 4rem;
@@ -33,14 +122,14 @@
 
 .introTitle::before {
     background: var(--intro-background-color);
-    animation: typing var(--intro-typing-speed) steps(var(--intro-typing-characters)) var(--intro-typing-delay) forwards;
+    animation: typing var(--intro-title-typing-speed) steps(var(--intro-title-typing-characters)) var(--intro-title-typing-delay) forwards;
 }
 
 .introTitle::after {
     width: .125rem;
     background: black;
-    animation: typing var(--intro-typing-speed) steps(var(--intro-typing-characters)) var(--intro-typing-delay) forwards,
-    blink 1s steps(var(--intro-typing-characters)) infinite;
+    animation: typing var(--intro-title-typing-speed) steps(var(--intro-title-typing-characters)) var(--intro-title-typing-delay) forwards,
+    blink 1s steps(var(--intro-title-typing-characters)) infinite;
 }
 
 
