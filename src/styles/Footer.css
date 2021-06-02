@@ -1,0 +1,96 @@
+:root {
+    --main-footer-font-color: #ffffff;
+    --main-footer-font-size: 15px;
+    --main-footer-background: #292c2f;
+}
+
+
+
+
+footer {
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: var(--main-footer-background);
+    padding: 20px;
+    color: var(--main-footer-font-color);
+    vertical-align: top;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-main > * {
+    display: flex;
+
+    width: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+.footer-fullname {
+    font: normal 36px 'Book Antiqua', cursive;
+    margin: 0px;
+}
+
+.footer-name {
+    color: #5383d3;
+}
+
+
+
+
+.footer-center {
+    display: inline-block;
+}
+
+.footer-mail {
+    display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.mail-icon {
+    flex: 1 1 100%;
+
+    font-size: 1.125rem;
+    color: var(--main-footer-font-color);
+    background-color: #33383b;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.mail-address {
+    color: #5383d3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-links {
+    font-size: 1.25rem;
+    color: var(--main-footer-font-color);
+    align-items: center;
+    padding: 8px 10px 5px;
+    margin: 5px;
+    background-color: #33383b;
+    border-radius: 10%;
+}

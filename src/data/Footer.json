@@ -1,0 +1,13 @@
+{
+    "name" : "Suraj",
+    "surname" : "G S N V",
+    "email" : "suraj.gsnv@gmail.com",
+    "links" : {
+        "facebook" : "https://www.facebook.com/gsnv.suraj",
+        "linkedin" : "https://www.linkedin.com/in/suraj-gsnv",
+        "github" : "https://github.com/gsnvsuraj",
+        "twitter" : "./",
+        "stackoverflow" : "https://stackoverflow.com/users/12070075/g-s-n-v-suraj",
+        "dev.to" : "./"
+    }
+}

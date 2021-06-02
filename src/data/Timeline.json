@@ -1,0 +1,22 @@
+{
+    "name" : "Suraj",
+    "timeline" : [
+        {
+            "title" : "Born",
+            "year" : 1998,
+            "description" : "Born in AP,India"
+        },
+
+        {
+            "title" : "Completed High School",
+            "year" : 2014,
+            "description" : "At Hosur,TN"
+        },
+
+        {
+            "title" : "Completed Junior College",
+            "year" : 2016,
+            "description" : "At Hyderabd, Telangana"
+        }
+    ]
+}

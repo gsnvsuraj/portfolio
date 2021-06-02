@@ -1,0 +1,26 @@
+:root {
+    --main-header-font-color: #ffffff;
+    --main-header-font-size: 15px;
+    --main-header-background: #292c2f;
+}
+
+
+
+
+header {
+    top: 0;
+    margin-bottom: 10px;
+}
+
+.header-main {
+    padding: 1rem;
+    background-color: var(--main-header-background);
+    color: var(--main-header-font-color);
+}
+
+.header-name {
+    font-size: 30px;
+    font-family: Georgia, serif;
+    text-align: left;
+    margin-left: 30px;
+}
