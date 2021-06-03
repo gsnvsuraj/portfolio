@@ -1,94 +1,56 @@
 :root {
-    --intro-background-color: white;
+    --intro-background-color: #33383b;
+    --intro-font-color: white;
     
     --intro-title-typing-speed: 4s;
-    --intro-title-typing-delay: 1.5s;
+    --intro-title-typing-delay: 2s;
     --intro-title-typing-characters: 11;
     
-    --intro-greet1-typing-speed: 2s;
-    --intro-greet1-typing-delay: 1s;
-    --intro-greet1-typing-characters: 6;
+    --intro-greet-appear-speed: 4s;
+    --intro-greet2-appear-delay: 3s;
 
-    --intro-greet2-typing-speed: 2s;
-    --intro-greet2-typing-delay: 1s;
-    --intro-greet2-typing-characters: 7;
+    --intro-desc-appear-speed: 2s;
+    --intro-desc-appear-delay: 5s;
 }
 
 .introBody {
-    height: calc(100vh - 200px);
+    height: calc(max-content + 100px);
     background-color: var(--intro-background-color);
+    padding: 10px;
+    color: var(--intro-font-color);
 }
 
 
 
 .introGreetingBody {
     display: flex;
-    justify-content: center;
-    position: relative;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.greet1, .greet2 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    width: max-content;
+    height: max-content;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .greet1 {
-    font-size: 4rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-    position: relative;
-    width: max-content;
-    height: max-content;
+    animation: disappear var(--intro-greet-appear-speed) ease forwards;
 }
-
-.greet1::before,
-.greet1::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.greet1::before {
-    background: var(--intro-background-color);
-    animation: typing var(--intro-greet1-typing-speed) steps(var(--intro-greet1-typing-characters)) var(--intro-greet1-typing-delay) forwards;
-}
-
-.greet1::after {
-    width: .125rem;
-    background: black;
-    animation: typing var(--intro-greet1-typing-speed) steps(var(--intro-greet1-typing-characters)) var(--intro-greet1-typing-delay) forwards,
-    blink 1s steps(var(--intro-greet1-typing-characters)) infinite;
-}
-
 
 .greet2 {
-    font-size: 4rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-    position: relative;
-    width: max-content;
-    height: max-content;
-}
-
-.greet2::before,
-.greet2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.greet2::before {
-    background: var(--intro-background-color);
-    animation: typing var(--intro-greet2-typing-speed) steps(var(--intro-greet2-typing-characters)) var(--intro-greet2-typing-delay) forwards;
-}
-
-.greet2::after {
-    width: .125rem;
-    background: black;
-    animation: typing var(--intro-greet2-typing-speed) steps(var(--intro-greet2-typing-characters)) var(--intro-greet2-typing-delay) forwards,
-    blink 1s steps(var(--intro-greet2-typing-characters)) infinite;
+    opacity: 0;
+    animation: appear var(--intro-greet-appear-speed) ease var(--intro-greet2-appear-delay) forwards;
 }
 
 
@@ -97,17 +59,21 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    height: calc(100vh - 200px);
-    background-color: var(--intro-background-color);
+    flex-direction: column;
+    height: max-content;
+
+    padding-bottom: 2rem;
 }
 
 
 .introTitle {
-    font-size: 4rem;
+    font-size: clamp(2rem, 10vw, 4rem);
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
     position: relative;
     height: max-content;
+    width: max-content;
+    white-space: nowrap;
 }
 
 .introTitle::before,
@@ -127,10 +93,22 @@
 
 .introTitle::after {
     width: .125rem;
-    background: black;
+    background: var(--intro-font-color);
     animation: typing var(--intro-title-typing-speed) steps(var(--intro-title-typing-characters)) var(--intro-title-typing-delay) forwards,
     blink 1s steps(var(--intro-title-typing-characters)) infinite;
 }
+
+
+
+.introDesc {
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+    visibility: hidden;
+    animation: appear var(--intro-desc-appear-speed) ease var(--intro-desc-appear-delay) forwards;
+}
+
 
 
 @keyframes typing {
@@ -142,5 +120,29 @@
 @keyframes blink {
     to {
         background: transparent;
+    }
+}
+
+@keyframes appear {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
     }
 }

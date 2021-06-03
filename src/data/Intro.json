@@ -1,3 +1,8 @@
 {
-    "name" : "Suraj"
+    "name" : "Suraj",
+    "greeting" : [
+        "Hello",
+        "Namaste"
+    ],
+    "description" : "Web & Software Developer"
 }

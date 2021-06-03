@@ -27,9 +27,9 @@ class Footer extends Component {
                 <div className="footer-center">
 
                     <div className="footer-mail" >
-                        <a href={"mailto:" + data.email}>
-                            <span className="mail-icon" ><IoIosMail /></span>
-                            <span className="mail-address">{data.email}</span>
+                        <a href={"mailto:" + data.email} >
+                            <IoIosMail className="mail-icon" />
+                            <div className="mail-address">{data.email}</div>
                         </a>
                     </div>
 

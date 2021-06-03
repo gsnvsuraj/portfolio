@@ -9,7 +9,7 @@
 
 header {
     top: 0;
-    margin-bottom: 10px;
+    opacity: 0.75;
 }
 
 .header-main {
