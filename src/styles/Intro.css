@@ -7,10 +7,11 @@
     --intro-title-typing-characters: 11;
     
     --intro-greet-appear-speed: 4s;
+    --intro-greet1-appear-delay: 1s;
     --intro-greet2-appear-delay: 3s;
 
     --intro-desc-appear-speed: 2s;
-    --intro-desc-appear-delay: 5s;
+    --intro-desc-appear-delay: 6s;
 }
 
 .introBody {
@@ -26,6 +27,8 @@
     display: flex;
     align-items: center;
     padding: 2rem 0;
+
+    height: max-content;
 }
 
 .greet1, .greet2 {
@@ -45,7 +48,7 @@
 
 
 .greet1 {
-    animation: disappear var(--intro-greet-appear-speed) ease forwards;
+    animation: disappear var(--intro-greet-appear-speed) ease var(--intro-greet1-appear-delay) forwards;
 }
 
 .greet2 {
@@ -62,12 +65,12 @@
     flex-direction: column;
     height: max-content;
 
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 
 .introTitle {
-    font-size: clamp(2rem, 10vw, 4rem);
+    font-size: clamp(2.5rem, 10vw, 4rem);
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
     position: relative;
