@@ -87,12 +87,11 @@ footer {
 }
 
 .footer-links {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     color: var(--main-footer-font-color);
     align-items: center;
-    padding: 4px 10px 8px;
+    padding: 4px 10px 10px;
     margin: 5px;
     background-color: #33383b;
     border-radius: 10%;
-    gap: 1em;
 }
