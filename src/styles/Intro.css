@@ -32,9 +32,10 @@
 }
 
 .greet1, .greet2 {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 4vw, 2rem);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    padding-bottom: 20px;
     
     width: max-content;
     height: max-content;
@@ -65,7 +66,7 @@
     flex-direction: column;
     height: max-content;
 
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 
@@ -106,7 +107,7 @@
 
 .introDesc {
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 3.5vw, 1.5rem);
     font-family: 'Times New Roman', Times, serif;
 
     margin: 10px auto;

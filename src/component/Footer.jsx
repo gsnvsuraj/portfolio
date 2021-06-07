@@ -24,7 +24,7 @@ class Footer extends Component {
 
                 </div>
 
-                <div className="footer-center">
+                {/* <div className="footer-center">
 
                     <div className="footer-mail" >
                         <a href={"mailto:" + data.email} >
@@ -33,7 +33,7 @@ class Footer extends Component {
                         </a>
                     </div>
 
-		        </div>
+		        </div> */}
 
                 <div className="footer-media" >
 
