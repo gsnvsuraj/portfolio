@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import data from '../data/Footer.json';
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitterSquare, FaStackOverflow } from 'react-icons/fa';
-import { IoIosMail } from 'react-icons/io';
+//import { IoIosMail } from 'react-icons/io';
 import '../styles/Footer.css';
 
 class Footer extends Component {

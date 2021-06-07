@@ -1,16 +1,16 @@
 import Header from './component/Header.jsx';
-import Timeline from './component/Timeline.jsx';
-import Intro from './component/Intro.jsx';
+import Contact from './component/Contact.jsx';
 import Footer from './component/Footer.jsx';
+import './styles/bootstrap.min.css';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Intro />
-      <Footer />
-    </div>
-  );
+  	return (
+    	<div className="App">
+      		<Header />
+      		<Contact />
+      		<Footer />
+    	</div>
+  	);
 }
 
 export default App;
