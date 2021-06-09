@@ -2,11 +2,28 @@
     margin: 40px;
     padding: 30px;
     box-shadow: 5px 10px 18px #888888;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.formBody > * {
+    flex: 1 1 auto;
+}
+
+/* .formLeft{
+    flex: 1 1 auto;
+}*/
+
+.formRight > #sendBtn{
+    text-align: center;
 }
 
 .formHeading {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
 }
 
 .form-elements {
@@ -18,4 +35,6 @@
     width: clamp(10rem, 50vw, 20rem);
     margin-top: 20px;
     border-radius: 200px;
+    justify-content: center;
+    text-align: center;
 }
