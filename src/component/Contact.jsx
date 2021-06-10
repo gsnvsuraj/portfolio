@@ -6,15 +6,11 @@ class Contact extends Component {
     render () {
         return (
             <>
-                <div className="contactBody">
+                <div className="contactPageBody">
 					
-                    <div className="formBody">
+                    <div className="contactBody">
 
-						<div className="formLeft">
-							<img src="https://placebeard.it/600x400" alt="placeholder image" />
-						</div>
-
-						<div className="formRight">
+						<div className="contactLeft">
 
 							<div className="formHeading">
 								<h1>
@@ -43,6 +39,31 @@ class Contact extends Component {
 
 							</form>
 
+						</div>
+
+						<div className="contactCenter">
+							<div className="separateLineBefore"></div>
+
+							<div className="separaterText">
+								or
+							</div>
+
+							<div className="separateLineAfter"></div>
+						</div>
+
+						<div className="contactRight">
+
+							<div className="socialHeading">
+								<h2>
+									Connect with Me
+								</h2>
+
+								<div>
+									<p>Social Links -</p>
+								</div>
+
+							</div>
+							
 						</div>
 
                     </div>

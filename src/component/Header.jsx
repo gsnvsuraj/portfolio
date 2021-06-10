@@ -8,9 +8,16 @@ class Header extends Component {
         return(
             <header className="header-main">
 
-                <div>
+                <div className="header-left">
                     <div className="header-name">
                         {data.name}
+                    </div>
+                </div>
+
+                <div className="header-right">
+                    <div className="headerLinks">
+                        <a href="/">Home</a>
+      			        <a href="/contact">Contact</a>
                     </div>
                 </div>
 

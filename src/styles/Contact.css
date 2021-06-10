@@ -1,4 +1,4 @@
-.formBody {
+.contactBody {
     margin: 40px;
     padding: 30px;
     box-shadow: 5px 10px 18px #888888;
@@ -8,15 +8,12 @@
     flex-wrap: wrap;
 }
 
-.formBody > * {
+.contactBody > * {
     flex: 1 1 auto;
 }
 
-/* .formLeft{
-    flex: 1 1 auto;
-}*/
 
-.formRight > #sendBtn{
+.contactLeft > #sendBtn{
     text-align: center;
 }
 
@@ -37,4 +34,53 @@
     border-radius: 200px;
     justify-content: center;
     text-align: center;
+}
+
+
+.contactCenter {
+    padding: 10px;
+}
+
+
+.separateLineBefore,
+.separateLineAfter {
+    content: '';
+    height: 35vh;
+    width: 1px;
+    background-color: #727578;
+    margin-left: 8px;
+}
+
+.separaterText {
+    padding: 10px 4px;
+}
+
+
+.socialHeading{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+
+@media ( max-width : 800px ) {
+    .contactCenter {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .separaterText {
+        padding: 10px 4px 10px 15px;
+    }
+    
+
+    .separateLineBefore,
+    .separateLineAfter {
+        content: '';
+        height: 1px;
+        width: 35vw;
+        background-color: #727578;
+        margin-top: 24px;
+    }
 }

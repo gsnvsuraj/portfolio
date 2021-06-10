@@ -5,21 +5,42 @@
 }
 
 
-
-
 header {
     top: 0;
+    display: flex;
 }
 
 .header-main {
     padding: 1rem;
     background-color: var(--main-header-background);
     color: var(--main-header-font-color);
+
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.header-left {
+    justify-self: start;
+}
+
+.header-right {
+    justify-self: end;
 }
 
 .header-name {
     font-size: 30px;
     font-family: Georgia, serif;
-    text-align: left;
     margin-left: 30px;
+}
+
+.headerLinks {
+    display: flex;
+}
+
+.headerLinks > * {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--main-header-font-color);
+    font-size: 1rem;
+    text-align: right;
 }
