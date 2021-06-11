@@ -54,13 +54,13 @@ class Contact extends Component {
 						<div className="contactRight">
 
 							<div className="socialHeading">
-								<h2>
+								<h1>
 									Connect with Me
-								</h2>
+								</h1>
 
-								<div>
+								<div className="connectBody">
 									<p>Social Links -</p>
-									<ul>
+									<ul className="connectLinks">
 										<li>Facebook</li>
 										<li>GitHub</li>
 										<li>LinkedIn</li>

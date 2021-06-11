@@ -62,12 +62,27 @@
     padding: 20px;
 }
 
+.connectBody {
+    text-align: left;
+    padding: 20px;
+}
+
+.connectLinks > * {
+    padding: 10px;
+}
+
+
 
 @media ( max-width : 800px ) {
+    .contactBody {
+        flex-direction: column;
+    }
+
     .contactCenter {
         padding: 20px;
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
     .separaterText {
@@ -79,7 +94,7 @@
     .separateLineAfter {
         content: '';
         height: 1px;
-        width: 35vw;
+        width: 40%;
         background-color: #727578;
         margin-top: 24px;
     }
