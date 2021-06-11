@@ -1,6 +1,8 @@
 import { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import data from '../data/Header.json';
 import '../styles/Header.css';
+
 
 class Header extends Component {
 
@@ -16,8 +18,8 @@ class Header extends Component {
 
                 <div className="header-right">
                     <div className="headerLinks">
-                        <a href="/">Home</a>
-      			        <a href="/contact">Contact</a>
+                        <NavLink to="/" exact>Home</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </div>
                 </div>
 

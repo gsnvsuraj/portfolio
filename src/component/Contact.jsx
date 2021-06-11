@@ -60,6 +60,13 @@ class Contact extends Component {
 
 								<div>
 									<p>Social Links -</p>
+									<ul>
+										<li>Facebook</li>
+										<li>GitHub</li>
+										<li>LinkedIn</li>
+										<li>Twitter</li>
+										<li>Stack Overflow</li>
+									</ul>
 								</div>
 
 							</div>

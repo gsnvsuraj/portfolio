@@ -1,23 +1,20 @@
 import Header from './component/Header.jsx';
-import Intro from './component/Intro.jsx';
 import Footer from './component/Footer.jsx';
 
-import Routes from './component/Routes.jsx';
-import {useRoutes} from 'hookrouter';
-
 import './styles/bootstrap.min.css';
+import Content from './component/MainContent.jsx';
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
-	
-	const routeResult = useRoutes(Routes);
 
   	return (
     	<div className="App">
-      		<Header />
-      		
-			  	{routeResult || <Intro />}
-			
-			<Footer />
+			<BrowserRouter basename="/portfolio">
+				<Header />
+				<Content />
+				<Footer />
+			</BrowserRouter>
     	</div>
   	);
 }
