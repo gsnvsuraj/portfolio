@@ -48,37 +48,20 @@ footer {
 }
 
 
-
-
-.footer-mail {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.footer-center {
+    font-size: 1.1rem;
 }
 
-.mail-icon {
-    font-size: 1.125rem;
-    color: var(--main-footer-font-color);
-    background-color: #33383b;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.mail-address {
-    color: #5383d3;
-    text-decoration: none;
+.linksHead {
+    font-size: 1.2rem;
     font-weight: bold;
-    display: inline-block;
-    transform: translate(5px, -16px);
 }
 
-.footer-mail > a {
-    text-decoration: none!important;
+.footerLinks > * {
+    text-decoration: none;
+    color: var(--main-footer-font-color);
+    margin-right: 10px;
 }
-
 
 
 

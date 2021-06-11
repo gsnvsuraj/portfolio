@@ -18,7 +18,7 @@ class Header extends Component {
 
                 <div className="header-right">
                     <div className="headerLinks">
-                        <NavLink to="/" exact>Home</NavLink>
+                        <NavLink to="/" exact={true} >Home</NavLink>
                         <NavLink to="/contact">Contact</NavLink>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import data from '../data/Footer.json';
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitterSquare, FaStackOverflow } from 'react-icons/fa';
-//import { IoIosMail } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 class Footer extends Component {
@@ -24,16 +24,17 @@ class Footer extends Component {
 
                 </div>
 
-                {/* <div className="footer-center">
+                <div className="footer-center">
 
-                    <div className="footer-mail" >
-                        <a href={"mailto:" + data.email} >
-                            <IoIosMail className="mail-icon" />
-                            <div className="mail-address">{data.email}</div>
-                        </a>
+                    <div className="footer-quick-links" >
+                        <div className="linksHead">Quick Links</div>
+                        <div className="footerLinks">
+                            <Link to="/" exact="true">Home</Link>
+                            <Link to="/contact">Contact</Link>
+                        </div>
                     </div>
 
-		        </div> */}
+		        </div>
 
                 <div className="footer-media" >
 
