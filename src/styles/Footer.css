@@ -60,7 +60,7 @@ footer {
 .footerLinks > * {
     text-decoration: none;
     color: var(--main-footer-font-color);
-    margin-right: 10px;
+    margin-right: 16px;
 }
 
 

@@ -45,14 +45,14 @@
 .separateLineBefore,
 .separateLineAfter {
     content: '';
-    height: 35vh;
+    height: 12rem;
     width: 1px;
     background-color: #727578;
-    margin-left: 8px;
+    margin-left: 48px;
 }
 
 .separaterText {
-    padding: 10px 4px;
+    padding: 10px 4px 10px 44px;
 }
 
 

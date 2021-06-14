@@ -19,7 +19,10 @@ class Header extends Component {
                 <div className="header-right">
                     <div className="headerLinks">
                         <NavLink to="/" exact={true} >Home</NavLink>
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/about" exact={true} >About</NavLink>
+                        <NavLink to="/timeline" exact={true} >Timeline</NavLink>
+                        <NavLink to="/projects" exact={true} >Projects</NavLink>
+                        <NavLink to="/contact" exact={true} >Contact</NavLink>
                     </div>
                 </div>
 
