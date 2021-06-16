@@ -1,0 +1,32 @@
+.projectsBody {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.projectsHeading {
+    text-align: center;
+}
+
+
+.projCardBody {
+    padding: 20px;
+    margin: 20px;
+    
+    display: flex;
+}
+
+
+.projCard {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 5px 10px 18px #888888;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projImage {
+    margin: 10px;
+}

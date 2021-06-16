@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import data from '../data/Projects.json';
 import ProjectCard from './ProjectCard';
+import '../styles/Project.css';
 
 
 class Projects extends Component {
@@ -17,11 +18,10 @@ class Projects extends Component {
                         <div>
                             {
                                 data.projects.map(
-                                    (projectObj, index) => {
+                                    (projectObj, index) => 
                                         <div>
                                             <ProjectCard key={index} obj={projectObj} />
                                         </div>
-                                    }
                                 )
                             }
                         </div>
