@@ -35,13 +35,13 @@ class Timeline extends Component {
                                         {
                                             index % 2 === 0 ?
                                                 
-                                                <TimelineCard key={index}
+                                                <TimelineCard key={index} id={index}
                                                 side={this.state.firstSide} title={obj.title} 
                                                 year={obj.year} desc={obj.description} /> 
                                                 
                                                 :
                                                 
-                                                <TimelineCard key={index}
+                                                <TimelineCard key={index} id={index}
                                                 side={this.state.secondSide} title={obj.title} 
                                                 year={obj.year} desc={obj.description} />
                                         }

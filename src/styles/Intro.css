@@ -79,6 +79,8 @@
     width: max-content;
     white-space: nowrap;
     margin: 20px auto;
+
+    z-index: 50;
 }
 
 .introTitle::before,
@@ -89,6 +91,8 @@
     right: 0;
     top: 0;
     bottom: 0;
+
+    z-index: 50;
 }
 
 .introTitle::before {

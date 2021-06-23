@@ -1,34 +1,37 @@
-import { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import data from '../data/Header.json';
+import React, { useState, useRef } from 'react';
+import Menu from './Menu';
+import BurgerSymbol from './BurgerSymbol';
+import ClickOutside from './ClickOutside';
 import '../styles/Header.css';
 
+// menuIconChange() {
+//     let element = document.getElementsByClassName("menuIcon");
+//     element[0].classList.toggle("changeMenu");
 
-class Header extends Component {
+//     let menu = document.getElementsByClassName("menuHidden");
+//     menu[0].classList.toggle("hideMenu");
+// }
 
-    render() {
-        return(
-            <header className="header-main">
 
-                <div className="header-left">
-                    <div className="header-name">
-                        {data.name}
-                    </div>
-                </div>
+const Header = () => {
 
-                <div className="header-right">
-                    <div className="headerLinks">
-                        <NavLink to="/" exact={true} >Home</NavLink>
-                        <NavLink to="/about" exact={true} >About</NavLink>
-                        <NavLink to="/timeline" exact={true} >Timeline</NavLink>
-                        <NavLink to="/projects" exact={true} >Projects</NavLink>
-                        <NavLink to="/contact" exact={true} >Contact</NavLink>
-                    </div>
-                </div>
+    const [open, setOpen] = useState(false);
 
-            </header>
-        )
-    }
+    const node = useRef(); 
+    ClickOutside(node, () => setOpen(false));
+
+    return(
+        <header className="header-main">
+
+            <div className="header-right" ref={node} >
+
+                <BurgerSymbol open={open} setOpen={setOpen} />               
+                <Menu open={open} setOpen={setOpen} />
+                
+            </div>
+
+        </header>
+    );
 
 }
 

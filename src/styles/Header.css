@@ -1,46 +1,89 @@
 :root {
-    --main-header-font-color: #ffffff;
+    --main-header-font-color: #000000;
+    --main-header-menu-color: #ffffff;
     --main-header-font-size: 15px;
     --main-header-background: #292c2f;
+    --main-header-menu-background: rgba(230, 234, 177, 0.75);
 }
 
 
 header {
     top: 0;
-    display: flex;
+    position: relative;
 }
 
-.header-main {
-    padding: 1rem;
+
+.menuIcon {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    position: absolute;
+    right: 20px;
     background-color: var(--main-header-background);
-    color: var(--main-header-font-color);
-
-    display: grid;
-    grid-auto-flow: column;
+    z-index: 1000;
 }
 
-.header-left {
-    justify-self: start;
+.menuBar1, .menuBar2, .menuBar3 {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-header-menu-color);
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-.header-right {
-    justify-self: end;
+.changeMenu .menuBar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 5px) ;
+    transform: rotate(-45deg) translate(-6px, 5px) ;
+}
+  
+.changeMenu .menuBar2 {
+    opacity: 0;
+}
+  
+  
+.changeMenu .menuBar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+    transform: rotate(45deg) translate(-6px, -6px) ;
 }
 
-.header-name {
-    font-size: 30px;
-    font-family: Georgia, serif;
-    margin-left: 30px;
+
+.hideMenu {
+    transform: translateX(100%);
 }
+
+
+.showMenu {
+    transform: translateX(0%);
+}
+
 
 .headerLinks {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    right: 0;
+    background-color: var(--main-header-menu-background);
+    z-index: 100;
+    transition: all 0.3s linear;
 }
 
 .headerLinks > * {
-    padding: 10px;
     text-decoration: none;
     color: var(--main-header-font-color);
-    font-size: 1rem;
-    text-align: right;
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: min-content;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .headerLinks {
+        width: 100%;
+    }
 }

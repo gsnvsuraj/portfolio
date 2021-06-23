@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Intro from './Intro';
 import Timeline from './Timeline';
 import Contact from './Contact';
 import Projects from './Projects';
