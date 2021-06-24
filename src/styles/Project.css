@@ -30,3 +30,12 @@
 .projImage {
     margin: 10px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .projCardBody {    
+        margin: 10px;    
+        display: flex;
+        flex-direction: column;
+    }
+}
