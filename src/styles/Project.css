@@ -1,6 +1,7 @@
 .projectsBody {
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 
@@ -10,8 +11,9 @@
 
 
 .projCardBody {
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 40px;
     
     display: flex;
 }
@@ -33,9 +35,16 @@
 
 
 @media only screen and (max-width: 768px) {
+    .projectsBody {
+        margin: 10px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
     .projCardBody {    
         margin: 10px;    
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }

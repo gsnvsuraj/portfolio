@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaUbuntu } from 'react-icons/fa';
-import { SiApachekafka, SiPostgresql, SiMicrosoftoffice, SiDocker, SiQuarkus } from 'react-icons/si';
+import { SiApachekafka, SiMicrosoftoffice, SiDocker, SiQuarkus } from 'react-icons/si';
+import '../styles/About.css';
 
 
 class About extends Component {
@@ -14,6 +15,10 @@ class About extends Component {
                             <h1>About</h1>
                         </div>
 
+                        <div className="aboutSection">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae dolorem veniam harum vero eius deleniti, doloremque earum sunt nulla corrupti quia neque delectus asperiores incidunt laudantium nostrum id ab.
+                        </div>
+
 
 
                     </div>
@@ -24,13 +29,14 @@ class About extends Component {
                         </div>
 
                         <div className="skillsBody">
-                            <div className="categoryTitle">Programming Languages</div>
-                            <FaPython />
-                            <FaJava />
+                            <div className="category">
+                                <div className="categoryTitle">Programming Languages - </div>
+                                <div className="skill" tooltip="Python"><FaPython /></div>
+                                <div className="skill" tooltip="Java"><FaJava /></div>
+                            </div>
                             <div className="categoryTitle">Web Technologies</div>
                             <FaBootstrap />
                             <FaReact />
-                            <SiPostgresql />
                             <div className="categoryTitle">Other Technologies</div>
                             <SiApachekafka />
                             <FaGitAlt />
