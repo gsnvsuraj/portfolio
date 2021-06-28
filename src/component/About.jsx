@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaUbuntu } from 'react-icons/fa';
-import { SiApachekafka, SiMicrosoftoffice, SiDocker, SiQuarkus } from 'react-icons/si';
+import { SiApachekafka, SiDocker, SiQuarkus } from 'react-icons/si';
 import '../styles/About.css';
 
 
@@ -23,30 +23,43 @@ class About extends Component {
 
                     </div>
 
-                    <div className="skilsPage">
+                    <div className="skillsPage">
                         <div className="skillsHeading">
                             <h1>Skills</h1>
                         </div>
 
                         <div className="skillsBody">
-                            <div className="category">
-                                <div className="categoryTitle">Programming Languages - </div>
+                            <div className="category category1">
+                                <div className="categoryTitle">Programming Languages</div>
+                                
                                 <div className="skill" tooltip="Python"><FaPython /></div>
                                 <div className="skill" tooltip="Java"><FaJava /></div>
                             </div>
-                            <div className="categoryTitle">Web Technologies</div>
-                            <FaBootstrap />
-                            <FaReact />
-                            <div className="categoryTitle">Other Technologies</div>
-                            <SiApachekafka />
-                            <FaGitAlt />
-                            <SiQuarkus />
-                            <SiDocker />
-                            <SiMicrosoftoffice />
-                            <div className="categoryTitle">Operating Systems</div>
-                            <FaWindows />
-                            <FaLinux />
-                            <FaUbuntu />
+
+                            <div className="category category2">                                
+                                <div className="skill" tooltip="React"><FaReact /></div>
+                                <div className="skill" tooltip="Bootstrap"><FaBootstrap /></div>
+
+                                <div className="categoryTitle">Web Technologies</div>
+                            </div>
+
+                            <div className="category category3">
+                                <div className="categoryTitle">Other Technologies</div>
+                                
+                                <div className="skill" tooltip="Git"><FaGitAlt /></div>
+                                <div className="skill" tooltip="Quarkus"><SiQuarkus /></div>
+                                <div className="skill" tooltip="Docker"><SiDocker /></div>
+                                <div className="skill" tooltip="Kafka"><SiApachekafka /></div>
+                            </div>
+
+                            <div className="category category4">                                
+                                <div className="skill" tooltip="Windows"><FaWindows /></div>
+                                <div className="skill" tooltip="Linux"><FaLinux /></div>
+                                <div className="skill" tooltip="Ubuntu"><FaUbuntu /></div>
+
+                                <div className="categoryTitle">Operating System</div>
+                            </div>
+
                         </div>
                     </div>
 

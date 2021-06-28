@@ -6,24 +6,43 @@
     );
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    padding: 30px;
 }
 
 
 .aboutHeading, .skillsHeading {
     text-align: center;
+    padding: 10px;
+}
+
+
+.skillsPage {
+    margin-top: 20px;
 }
 
 
 .category {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    margin: 20px;
+    padding: 20px;
     font-size: 1.8rem;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    width: max-content;
+}
+
+
+.categoryTitle {
+    font-size: 1.5rem;
 }
 
 
 .skill {
-    margin: 0px 5px;
+    margin: 0px 10px;
     position: relative;
 }
 
@@ -47,9 +66,17 @@
     position: absolute;
     top: 2.2rem;
     left: -20px;
+    z-index: 50;
 }
 
 
 .skill:hover:before, .skill:active:before {
     display: block;
+}
+
+
+.skillsBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
