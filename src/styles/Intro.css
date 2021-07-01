@@ -15,7 +15,7 @@
 }
 
 .introBody {
-    height: max(max-content, calc(100vh - 50px));
+    height: 100vh;
     background-color: var(--intro-background-color);
     padding: 10px;
     color: var(--intro-font-color);
@@ -36,6 +36,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     padding-bottom: 20px;
+    margin-top: 10vh;
     
     width: max-content;
     height: max-content;
@@ -79,6 +80,9 @@
     width: max-content;
     white-space: nowrap;
     margin: 20px auto;
+    margin-top: 20vh;
+    text-shadow: 0.5px 0.5px 0 #000,
+                3px 3px 4px #000;
 
     z-index: 50;
 }

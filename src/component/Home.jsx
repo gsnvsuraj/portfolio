@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/Home.css';
 
 import Intro from './Intro';
-import Timeline from './Timeline';
 import Contact from './Contact';
 import Projects from './Projects';
 import About from './About';
+
 
 const Home = () => {
     return ( 
@@ -19,10 +19,6 @@ const Home = () => {
 
                 <div className="aboutPage">
                     <About />
-                </div>
-
-                <div className="timelinePage">
-                    <Timeline />
                 </div>
 
                 <div className="projectsPage">

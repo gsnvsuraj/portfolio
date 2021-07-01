@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillHome, AiOutlineFundProjectionScreen } from 'react-icons/ai';
-import { MdTimeline } from 'react-icons/md';
 import { IoPerson, IoMail } from 'react-icons/io5';
 
 
@@ -20,11 +19,6 @@ const Menu = ({ open, setOpen }) => {
                         <NavLink to="/about" exact={true} className="navLink" onClick={() => setOpen(false)} >
                             <span className="navLinkIcons"><IoPerson /></span>
                             About
-                        </NavLink>
-                        
-                        <NavLink to="/timeline" exact={true} className="navLink" onClick={() => setOpen(false)} >
-                            <span className="navLinkIcons"><MdTimeline /></span>
-                            Timeline
                         </NavLink>
                         
                         <NavLink to="/projects" exact={true} className="navLink" onClick={() => setOpen(false)} >

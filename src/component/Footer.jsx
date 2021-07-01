@@ -31,7 +31,6 @@ class Footer extends Component {
                         <div className="footerLinks">
                             <Link to="/" exact="true">Home</Link>
                             <Link to="/about" exact="true">About</Link>
-                            <Link to="/timeline" exact="true">Timeline</Link>
                             <Link to="/projects" exact="true">Projects</Link>
                             <Link to="/contact" exact="true">Contact</Link>
                         </div>

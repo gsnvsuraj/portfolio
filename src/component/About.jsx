@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import Title from './Title';
 import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaUbuntu } from 'react-icons/fa';
 import { SiApachekafka, SiDocker, SiQuarkus } from 'react-icons/si';
 import '../styles/About.css';
@@ -11,9 +12,7 @@ class About extends Component {
                 <div className="aboutBody">
                     
                     <div>
-                        <div className="aboutHeading">
-                            <h1>About</h1>
-                        </div>
+                        <Title title="About" />
 
                         <div className="aboutSection">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae dolorem veniam harum vero eius deleniti, doloremque earum sunt nulla corrupti quia neque delectus asperiores incidunt laudantium nostrum id ab.
@@ -24,9 +23,7 @@ class About extends Component {
                     </div>
 
                     <div className="skillsPage">
-                        <div className="skillsHeading">
-                            <h1>Skills</h1>
-                        </div>
+                        <Title title="Skills" />
 
                         <div className="skillsBody">
                             <div className="category category1">

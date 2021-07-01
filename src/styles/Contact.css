@@ -12,11 +12,6 @@
     flex: 1 1 auto;
 }
 
-
-.contactLeft > #sendBtn{
-    text-align: center;
-}
-
 .formHeading {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +27,6 @@
     width: clamp(10rem, 50vw, 20rem);
     margin-top: 20px;
     border-radius: 200px;
-    justify-content: center;
     text-align: center;
 }
 

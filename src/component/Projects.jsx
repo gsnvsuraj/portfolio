@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import data from '../data/Projects.json';
 import ProjectCard from './ProjectCard';
+import Title from './Title';
 import '../styles/Project.css';
 
 
@@ -11,9 +12,7 @@ class Projects extends Component {
                 <div className="projectsBody">
                     
                     <div>
-                        <div className="projectsHeading">
-                            <h1>Notable Projects</h1>
-                        </div>
+                        <Title title="Notable Projects" />
 
                         <div>
                             {
