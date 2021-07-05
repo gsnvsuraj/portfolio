@@ -17,33 +17,31 @@
 
 
 .skillsPage {
-    margin-top: 20px;
+    margin: 40px 0;
 }
 
 
-.category {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    margin: 20px;
-    padding: 20px;
-    font-size: 1.8rem;
-    border: 1px solid #fff;
-    border-radius: 40px;
-    width: max-content;
-}
-
-
-.categoryTitle {
+.skillsList {
+    list-style: none;
     font-size: 1.5rem;
+}
+
+
+.skillsList > * {
+    margin-bottom: 10px;
+}
+
+
+.bulletPoint {
+    margin-right: 15px;
 }
 
 
 .skill {
     margin: 0px 10px;
     position: relative;
+    font-size: 2rem;
+    text-align: justify;
 }
 
 
@@ -64,7 +62,7 @@
     transition: all 0.2s ease-in-out;
 
     position: absolute;
-    top: 2.2rem;
+    top: 1.6rem;
     left: -20px;
     z-index: 50;
 }

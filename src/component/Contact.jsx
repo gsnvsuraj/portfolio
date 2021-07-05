@@ -40,40 +40,7 @@ const Contact = () => {
 						</form>
 
 					</div>
-
-					<div className="contactCenter">
-						<div className="separateLineBefore"></div>
-
-						<div className="separaterText">
-							or
-						</div>
-
-						<div className="separateLineAfter"></div>
-					</div>
-
-					<div className="contactRight">
-
-						<div className="socialHeading">
-							<h1>
-								Connect with Me
-							</h1>
-
-							<br />
-							<h3>via</h3>
-
-							<div className="connectBody">
-								<ul className="connectLinks">
-									<li>Facebook</li>
-									<li>GitHub</li>
-									<li>LinkedIn</li>
-									<li>Twitter</li>
-									<li>Stack Overflow</li>
-								</ul>
-							</div>
-
-						</div>
 						
-					</div>
 
 				</div>
 

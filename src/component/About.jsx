@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Title from './Title';
-import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaUbuntu } from 'react-icons/fa';
-import { SiApachekafka, SiDocker, SiQuarkus } from 'react-icons/si';
+import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaTerminal } from 'react-icons/fa';
+import { SiDocker, SiQuarkus } from 'react-icons/si';
 import '../styles/About.css';
 
 
@@ -26,37 +26,16 @@ class About extends Component {
                         <Title title="Skills" />
 
                         <div className="skillsBody">
-                            <div className="category category1">
-                                <div className="categoryTitle">Programming Languages</div>
-                                
-                                <div className="skill" tooltip="Python"><FaPython /></div>
-                                <div className="skill" tooltip="Java"><FaJava /></div>
-                            </div>
 
-                            <div className="category category2">                                
-                                <div className="skill" tooltip="React"><FaReact /></div>
-                                <div className="skill" tooltip="Bootstrap"><FaBootstrap /></div>
-
-                                <div className="categoryTitle">Web Technologies</div>
-                            </div>
-
-                            <div className="category category3">
-                                <div className="categoryTitle">Other Technologies</div>
-                                
-                                <div className="skill" tooltip="Git"><FaGitAlt /></div>
-                                <div className="skill" tooltip="Quarkus"><SiQuarkus /></div>
-                                <div className="skill" tooltip="Docker"><SiDocker /></div>
-                                <div className="skill" tooltip="Kafka"><SiApachekafka /></div>
-                            </div>
-
-                            <div className="category category4">                                
-                                <div className="skill" tooltip="Windows"><FaWindows /></div>
-                                <div className="skill" tooltip="Linux"><FaLinux /></div>
-                                <div className="skill" tooltip="Ubuntu"><FaUbuntu /></div>
-
-                                <div className="categoryTitle">Operating System</div>
-                            </div>
-
+                            <ul className="skillsList">
+                                <li><FaTerminal className="bulletPoint"/> Worked with<span className="skill" tooltip="Python"><FaPython /></span>. Used it for several projects and also for solving coding problems.</li>
+                                <li><FaTerminal className="bulletPoint"/> Used<span className="skill" tooltip="Java"><FaJava /></span>for developing micro services.</li>
+                                <li><FaTerminal className="bulletPoint"/> Developed Web Apps using<span className="skill" tooltip="React"><FaReact /></span>, along with CSS and<span className="skill" tooltip="Bootstrap"><FaBootstrap /></span>.</li>
+                                <li><FaTerminal className="bulletPoint"/> Have used<span className="skill" tooltip="Git"><FaGitAlt /></span>for several projects.</li>
+                                <li><FaTerminal className="bulletPoint"/> Created micro service with<span className="skill" tooltip="Quarkus"><SiQuarkus /></span>framework and used<span className="skill" tooltip="Docker"><SiDocker /></span>for various other services.</li>
+                                <li><FaTerminal className="bulletPoint"/> Familiar working with<span className="skill" tooltip="Windows"><FaWindows /></span>and<span className="skill" tooltip="Linux"><FaLinux /></span> Operating systems.</li>
+                            </ul>
+                            
                         </div>
                     </div>
 

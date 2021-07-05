@@ -6,10 +6,15 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    background: #ff9966;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .contactBody > * {
     flex: 1 1 auto;
+    color: white;
 }
 
 .formHeading {
@@ -21,6 +26,19 @@
 .form-elements {
     padding: 10px;
 }
+
+
+.form-control {
+    background: transparent;
+    color: white;
+}
+
+
+.form-control:focus {
+    background: transparent;
+    color: white;
+}
+
 
 #sendBtn {
     text-align: center;
@@ -63,33 +81,4 @@
 
 .connectLinks > * {
     padding: 10px;
-}
-
-
-
-@media ( max-width : 800px ) {
-    .contactBody {
-        flex-direction: column;
-    }
-
-    .contactCenter {
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .separaterText {
-        padding: 10px 4px 10px 15px;
-    }
-    
-
-    .separateLineBefore,
-    .separateLineAfter {
-        content: '';
-        height: 1px;
-        width: 40%;
-        background-color: #727578;
-        margin-top: 24px;
-    }
 }
