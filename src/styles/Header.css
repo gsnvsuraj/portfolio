@@ -88,7 +88,7 @@ header {
 
 .navLinkIcons {
     padding: 0px 10px 2px 2px;
-    transform: translateY(-5px);
+    transform: translateY(5px);
 }
 
 

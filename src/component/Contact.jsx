@@ -1,4 +1,5 @@
 import React from 'react';
+import Title from './Title';
 import '../styles/Contact.css';
 
 
@@ -11,31 +12,32 @@ const Contact = () => {
 				<div className="contactBody">
 
 					<div className="contactLeft">
+						<img src="https://unsplash.it/300/500" alt="project" />
+					</div>
 
-						<div className="formHeading">
-							<h1>
-								Contact Me
-							</h1>
-						</div>
+
+					<div className="contactRight">
+
+						<Title title="Contact Me" />
 
 						<form className="form-inline">
 
 							<div className="form-group form-elements">
-								<label className="sr-only" htmlFor="inputName">Name</label>
+								<label className="formName" htmlFor="inputName">Name</label>
 								<input type="text" className="form-control" id="inputName" placeholder="Name" required />
 							</div>
 
 							<div className="form-group form-elements">
-								<label className="sr-only" htmlFor="inputEmail">Email Address</label>
+								<label className="formName" htmlFor="inputEmail">Email Address</label>
 								<input type="email" className="form-control" id="inputEmail" placeholder="Email" required />
 							</div>
 
 							<div className="form-group form-elements">
-								<label className="sr-only" htmlFor="inputMessage">Message</label>
+								<label className="formName" htmlFor="inputMessage">Message</label>
 								<textarea className="form-control" rows="4" id="inputMessage" placeholder="Leave a Message" required></textarea>
 							</div>
 
-							<button type="submit" className="btn btn-primary" id="sendBtn">Send</button>
+							<button type="submit" className="sendBtn">Send</button>
 
 						</form>
 

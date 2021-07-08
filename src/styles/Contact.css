@@ -1,27 +1,71 @@
 .contactBody {
     margin: 40px;
-    padding: 30px;
     box-shadow: 5px 10px 18px #888888;
 
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background: #ff9966;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #ff9966;
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966);
 }
+
 
 .contactBody > * {
     flex: 1 1 auto;
     color: white;
 }
 
+
+.contactLeft {
+    padding: 30px;
+}
+
+
+.contactLeft > img {
+    max-height: 500px;
+    width: 100%;
+}
+
+
+.contactRight {
+    padding: 5px;
+    margin: 20px;
+}
+
+
+
 .formHeading {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 20px;
 }
+
+
+.form-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-inline > * {
+    margin: 10px auto;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+
+.formName {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
 
 .form-elements {
     padding: 10px;
@@ -31,6 +75,9 @@ background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, F
 .form-control {
     background: transparent;
     color: white;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px;
 }
 
 
@@ -40,45 +87,13 @@ background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, F
 }
 
 
-#sendBtn {
+.sendBtn {
     text-align: center;
-    width: clamp(10rem, 50vw, 20rem);
-    margin-top: 20px;
+    width: clamp(10rem, 40vw, 16rem);
     border-radius: 200px;
     text-align: center;
-}
-
-
-.contactCenter {
+    font-size: 1rem;
     padding: 10px;
-}
 
-
-.separateLineBefore,
-.separateLineAfter {
-    content: '';
-    height: 12rem;
-    width: 1px;
-    background-color: #727578;
-    margin-left: 48px;
-}
-
-.separaterText {
-    padding: 10px 4px 10px 44px;
-}
-
-
-.socialHeading{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-}
-
-.connectBody {
-    text-align: left;
-    padding: 20px;
-}
-
-.connectLinks > * {
-    padding: 10px;
+    margin: 20px auto;
 }

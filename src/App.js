@@ -2,7 +2,6 @@ import Header from './component/Header.jsx';
 import Footer from './component/Footer.jsx';
 import ScrollToTop from './component/ScrollToTop.jsx';
 
-import './styles/bootstrap.min.css';
 import Content from './component/MainContent.jsx';
 import { BrowserRouter } from 'react-router-dom';
 
