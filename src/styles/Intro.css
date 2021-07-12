@@ -3,15 +3,15 @@
     --intro-font-color: white;
     
     --intro-title-typing-speed: 4s;
-    --intro-title-typing-delay: 2s;
+    --intro-title-typing-delay: 1s;
     --intro-title-typing-characters: 11;
     
     --intro-greet-appear-speed: 4s;
-    --intro-greet1-appear-delay: 1s;
-    --intro-greet2-appear-delay: 3s;
+    --intro-greet1-appear-delay: 0.5s;
+    --intro-greet2-appear-delay: 2.5s;
 
-    --intro-desc-appear-speed: 2s;
-    --intro-desc-appear-delay: 6s;
+    --intro-desc-appear-speed: 1.5s;
+    --intro-desc-appear-delay: 4.5s;
 }
 
 .introBody {
@@ -61,6 +61,11 @@
 }
 
 
+.titleBox {
+    position: relative;
+}
+
+
 
 .introTitleBody {
     display: flex;
@@ -83,8 +88,16 @@
     white-space: nowrap;
     margin: 20px auto;
     margin-top: 20vh;
-    text-shadow: 0.5px 0.5px 0 #000,
-                3px 3px 4px #000;
+    text-shadow: 0.5px 0.5px 0 #fff,
+                8px 8px 4px #000000,
+                0.5px 0.5px 0px #fff,
+                0px 0.5px 0px #fff,
+                0.5px 0px 0px #fff,
+                1px 1px 0px #fff,
+                1px 1px 0px #fff,
+                1.5px 1.5px 0px #fff,
+                2px 2px 0px #fff,
+                2.5px 2.5px 0px #fff;
 
     z-index: 50;
 }
@@ -124,6 +137,12 @@
 
     visibility: hidden;
     animation: appear var(--intro-desc-appear-speed) ease var(--intro-desc-appear-delay) forwards;
+}
+
+
+.openBraces, .closeBraces {
+    position: absolute;
+    left: 30px;
 }
 
 

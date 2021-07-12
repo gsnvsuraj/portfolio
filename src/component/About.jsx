@@ -15,7 +15,8 @@ class About extends Component {
                         <Title title="About" />
 
                         <div className="aboutSection">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae dolorem veniam harum vero eius deleniti, doloremque earum sunt nulla corrupti quia neque delectus asperiores incidunt laudantium nostrum id ab.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae dolorem veniam harum vero eius deleniti, doloremque earum sunt nulla corrupti quia neque delectus asperiores incidunt laudantium nostrum id ab.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae dolorem veniam harum vero eius deleniti, doloremque earum sunt nulla corrupti quia neque delectus asperiores incidunt laudantium nostrum id ab.</p>
                         </div>
 
 
@@ -33,7 +34,7 @@ class About extends Component {
                                 <li><FaTerminal className="bulletPoint"/> Developed Web Apps using<span className="skill" tooltip="React"><FaReact /></span>, along with CSS and<span className="skill" tooltip="Bootstrap"><FaBootstrap /></span>.</li>
                                 <li><FaTerminal className="bulletPoint"/> Have used<span className="skill" tooltip="Git"><FaGitAlt /></span>for several projects.</li>
                                 <li><FaTerminal className="bulletPoint"/> Created micro service with<span className="skill" tooltip="Quarkus"><SiQuarkus /></span>framework and used<span className="skill" tooltip="Docker"><SiDocker /></span>for various other services.</li>
-                                <li><FaTerminal className="bulletPoint"/> Familiar working with<span className="skill" tooltip="Windows"><FaWindows /></span>and<span className="skill" tooltip="Linux"><FaLinux /></span> Operating systems.</li>
+                                <li><FaTerminal className="bulletPoint"/> Experienced working with<span className="skill" tooltip="Windows"><FaWindows /></span>and<span className="skill" tooltip="Linux"><FaLinux /></span> Operating systems.</li>
                             </ul>
                             
                         </div>

@@ -24,16 +24,19 @@
 .skillsList {
     list-style: none;
     font-size: 1.5rem;
+    padding: 0;
 }
 
 
 .skillsList > * {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 0;
 }
 
 
 .bulletPoint {
     margin-right: 15px;
+    font-size: 1.2rem;
 }
 
 
