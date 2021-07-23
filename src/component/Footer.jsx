@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import data from '../data/Footer.json';
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitterSquare, FaStackOverflow } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
@@ -30,7 +30,7 @@ class Footer extends Component {
                         <div className="linksHead">Quick Links</div>
                         <div className="footerLinks">
                             <Link to="/" exact="true">Home</Link>
-                            <Link to="/intro" exact="true">Intro</Link>
+                            {/* <Link to="/intro" exact="true">Intro</Link> */}
                             <Link to="/about" exact="true">About</Link>
                             <Link to="/projects" exact="true">Projects</Link>
                             <Link to="/contact" exact="true">Contact</Link>
@@ -46,7 +46,7 @@ class Footer extends Component {
                         <a className="footer-links" href={data.links.facebook} target="_blank" rel="noopener noreferrer" ><FaFacebook /></a>
                         <a className="footer-links" href={data.links.github} target="_blank" rel="noopener noreferrer" ><FaGithub /></a>
                         <a className="footer-links" href={data.links.linkedin} target="_blank" rel="noopener noreferrer" ><FaLinkedin /></a>
-                        <a className="footer-links" href={data.links.twitter} target="_blank" rel="noopener noreferrer" ><FaTwitterSquare /></a>
+                        {/* <a className="footer-links" href={data.links.twitter} target="_blank" rel="noopener noreferrer" ><FaTwitterSquare /></a> */}
                         <a className="footer-links" href={data.links.stackoverflow} target="_blank" rel="noopener noreferrer" ><FaStackOverflow /></a>
                     
                     </div>
