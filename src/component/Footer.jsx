@@ -30,10 +30,8 @@ class Footer extends Component {
                         <div className="linksHead">Quick Links</div>
                         <div className="footerLinks">
                             <Link to="/" exact="true">Home</Link>
-                            {/* <Link to="/intro" exact="true">Intro</Link> */}
                             <Link to="/about" exact="true">About</Link>
                             <Link to="/projects" exact="true">Projects</Link>
-                            <Link to="/contact" exact="true">Contact</Link>
                         </div>
                     </div>
 

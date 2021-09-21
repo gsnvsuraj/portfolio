@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillHome, AiOutlineFundProjectionScreen } from 'react-icons/ai';
-import { IoPerson, IoMail } from 'react-icons/io5';
+import { IoPerson } from 'react-icons/io5';
 
 
 const Menu = ({ open, setOpen }) => {
@@ -26,10 +26,6 @@ const Menu = ({ open, setOpen }) => {
                             Projects
                         </NavLink>
                         
-                        <NavLink to="/contact" exact={true} className="navLink" onClick={() => setOpen(false)} >
-                            <span className="navLinkIcons"><IoMail /></span>
-                            Contact
-                        </NavLink>
 
                     </div>
                 </div>

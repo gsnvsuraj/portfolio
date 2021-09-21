@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/Home.css';
 
 import Intro from './Intro';
-import Contact from './Contact';
 import Projects from './Projects';
 import About from './About';
 
@@ -25,9 +24,6 @@ const Home = () => {
                     <Projects />
                 </div>
 
-                <div className="contactPage">
-                    <Contact />
-                </div>
 
             </div>
         </>
