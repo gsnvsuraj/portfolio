@@ -44,7 +44,6 @@ class Footer extends Component {
                         <a className="footer-links" href={data.links.facebook} target="_blank" rel="noopener noreferrer" ><FaFacebook /></a>
                         <a className="footer-links" href={data.links.github} target="_blank" rel="noopener noreferrer" ><FaGithub /></a>
                         <a className="footer-links" href={data.links.linkedin} target="_blank" rel="noopener noreferrer" ><FaLinkedin /></a>
-                        {/* <a className="footer-links" href={data.links.twitter} target="_blank" rel="noopener noreferrer" ><FaTwitterSquare /></a> */}
                         <a className="footer-links" href={data.links.stackoverflow} target="_blank" rel="noopener noreferrer" ><FaStackOverflow /></a>
                     
                     </div>
