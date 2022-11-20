@@ -16,6 +16,13 @@
 }
 
 
+.aboutSection {
+    font-size: 1.5rem;
+    padding: 30px;
+    line-height: 3rem;
+}
+
+
 .skillsPage {
     margin: 40px 0;
 }

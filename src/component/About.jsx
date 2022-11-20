@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import Title from './Title';
-import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaTerminal } from 'react-icons/fa';
-import { SiDocker, SiQuarkus } from 'react-icons/si';
+import { FaPython, FaJava, FaBootstrap, FaReact, FaGitAlt, FaWindows, FaLinux, FaTerminal, FaGithub, FaSourcetree, FaConfluence } from 'react-icons/fa';
+import { SiKubernetes, SiQuarkus, SiDocker, SiApachekafka, SiCss3, SiHtml5, SiHelm, SiJavascript, SiPostgresql, SiMysql, SiHibernate, SiSpringboot, SiPrometheus, SiGrafana, SiJirasoftware, SiCplusplus } from 'react-icons/si';
+import { RiGitlabFill } from 'react-icons/ri';
 import '../styles/About.css';
 
 
@@ -15,12 +16,7 @@ class About extends Component {
                         <Title title="About" />
 
                         <div className="aboutSection">
-                            <ul className="aboutList">
-                                <li>An enthusiastic Web and Software Developer</li>
-                                <li>Seeking to work in a fun and challenging environment</li>
-                                <li>Eager to learn and work with new skills and technologies</li>
-                                <li>Being a team player, to support and coordinate with each other</li>
-                            </ul>
+                            Software Developer with over 2 years of experience in developing, maintaining and deploying reactive and robust micro-services for Web and Software Applications in a cloud-based environment. Worked extensively with both small and big teams in an Agile based Scrum Environment. Experienced in working with the modern-day technologies.
                         </div>
 
 
@@ -33,12 +29,16 @@ class About extends Component {
                         <div className="skillsBody">
 
                             <ul className="skillsList">
-                                <li><FaTerminal className="bulletPoint"/> Worked with <span className="skill" tooltip="Python"><FaPython /></span> on several projects and for solving coding problems.</li>
-                                <li><FaTerminal className="bulletPoint"/> Developed microservices with <span className="skill" tooltip="Java"><FaJava /></span> .</li>
-                                <li><FaTerminal className="bulletPoint"/> Built web applications utilizing <span className="skill" tooltip="React"><FaReact /></span>, CSS and <span className="skill" tooltip="Bootstrap"><FaBootstrap /></span> .</li>
-                                <li><FaTerminal className="bulletPoint"/> Worked with<span className="skill" tooltip="Git"><FaGitAlt /></span> on a number of projects.</li>
-                                <li><FaTerminal className="bulletPoint"/> Created micro-services using <span className="skill" tooltip="Quarkus"><SiQuarkus /></span> and <span className="skill" tooltip="Docker"><SiDocker /></span> for deployong other services.</li>
+                                <li><FaTerminal className="bulletPoint"/> Worked with <span className="skill" tooltip="Java"><FaJava /></span>, <span className="skill" tooltip="Python"><FaPython /></span> and <span className="skill" tooltip="C++"><SiCplusplus /></span> on several projects and for solving coding problems.</li>
+                                <li><FaTerminal className="bulletPoint"/> Developed micro-services and its architecture with <span className="skill" tooltip="Quarkus"><SiQuarkus /></span> and <span className="skill" tooltip="Spring Boot"><SiSpringboot /></span> .</li>
+                                <li><FaTerminal className="bulletPoint"/> Facilitated communication between micro-services using <span className="skill" tooltip="Apache Kafka"><SiApachekafka /></span> using topics, Streams, Connectors and Avro Schemas.</li>
+                                <li><FaTerminal className="bulletPoint"/> Built web applications utilizing <span className="skill" tooltip="React"><FaReact /></span>, <span className="skill" tooltip="HTML"><SiHtml5 /></span>, <span className="skill" tooltip="CSS"><SiCss3 /></span>, <span className="skill" tooltip="JavaScript"><SiJavascript /></span> and <span className="skill" tooltip="BootStrap"><FaBootstrap /></span> .</li>
+                                <li><FaTerminal className="bulletPoint"/> Used Version Control Tools like <span className="skill" tooltip="Git"><FaGitAlt /></span>, <span className="skill" tooltip="Github"><FaGithub /></span>, <span className="skill" tooltip="Gitlab"><RiGitlabFill /></span> and <span className="skill" tooltip="Sourcetree"><FaSourcetree /></span> on a number of projects.</li>
+                                <li><FaTerminal className="bulletPoint"/> Deployed micro-services using <span className="skill" tooltip="Kubernetes"><SiKubernetes /></span>, <span className="skill" tooltip="Docker"><SiDocker /></span> and <span className="skill" tooltip="Helm"><SiHelm /></span> in Cloud-based environment.</li>
+                                <li><FaTerminal className="bulletPoint"/> Stored data in DataBase Management System like <span className="skill" tooltip="Postgresql"><SiPostgresql /></span>, <span className="skill" tooltip="MySQL"><SiMysql /></span> and <span className="skill" tooltip="Hibernate"><SiHibernate /></span> .</li>
+                                <li><FaTerminal className="bulletPoint"/> Monitored the performance and memeory impact of services using <span className="skill" tooltip="Prometheus"><SiPrometheus /></span> and <span className="skill" tooltip="Grafana"><SiGrafana /></span> .</li>
                                 <li><FaTerminal className="bulletPoint"/> Experienced in working with the <span className="skill" tooltip="Windows"><FaWindows /></span> and <span className="skill" tooltip="Linux"><FaLinux /></span> based Operating systems.</li>
+                                <li><FaTerminal className="bulletPoint"/> Managed User stories and Tasks with <span className="skill" tooltip="JIRA"><SiJirasoftware /></span> and documented various use cases and features with <span className="skill" tooltip="Confluence"><FaConfluence /></span> .</li>
                             </ul>
                             
                         </div>
